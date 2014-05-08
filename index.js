@@ -67,7 +67,7 @@ EyeD3.prototype.updateMeta = function(file, meta, callback) {
  * @return {Array} The arguments for our spawn() call
  */
 EyeD3.prototype.buildArgs = function(meta) {
-  var args = []
+  var args = ['--set-encoding', 'utf8']
 
   if(meta.artist)  args.push('-a', meta.artist)
   if(meta.title)   args.push('-t', meta.title)
